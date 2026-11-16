@@ -10,7 +10,7 @@ on:
 jobs:
   build-ipa:
     name: Build IPA on Cloud macOS
-    runs-on: macos-14 # Apple Silicon M2 runner
+    runs-on: macos-latest # Standard Apple Silicon runner
 
     steps:
       - name: Checkout Repository
