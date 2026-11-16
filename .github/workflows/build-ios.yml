@@ -6,11 +6,6 @@ on:
     branches:
       - main
       - master
-    paths:
-      - 'ios/**'
-      - 'rust/**'
-      - 'native/**'
-      - '.github/workflows/build-ios.yml'
 
 jobs:
   build-ipa:
