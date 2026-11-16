@@ -39,6 +39,7 @@ public struct NovaMetalViewport: UIViewRepresentable {
         // Dynamic view updates
     }
 
+    @MainActor
     public class Coordinator: NSObject, MTKViewDelegate {
         var bridge: NovaBridge
         private var lastPanPoint: CGPoint = .zero
@@ -49,11 +50,11 @@ public struct NovaMetalViewport: UIViewRepresentable {
             super.init()
         }
 
-        public func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
+        nonisolated public func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
             // Viewport resize handling
         }
 
-        public func draw(in view: MTKView) {
+        nonisolated public func draw(in view: MTKView) {
             guard let drawable = view.currentDrawable,
                   let renderPassDescriptor = view.currentRenderPassDescriptor,
                   let commandQueue = view.device?.makeCommandQueue(),

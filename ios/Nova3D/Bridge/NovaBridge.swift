@@ -146,9 +146,9 @@ public final class NovaBridge: ObservableObject {
 
         var editState = NovaEditState()
         if nova_core_edit_get_state(h, &editState) == 0 {
-            self.vertexCount = Int(editState.vertex_count)
-            self.edgeCount = Int(editState.edge_count)
-            self.faceCount = Int(editState.face_count)
+            self.vertexCount = Int(editState.total_verts)
+            self.edgeCount = Int(editState.total_edges)
+            self.faceCount = Int(editState.total_faces)
         }
     }
 
