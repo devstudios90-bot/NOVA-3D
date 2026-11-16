@@ -18,6 +18,7 @@ third_party/filament/filament/
 # iOS / Xcode
 ios/build/
 *.ipa
+*.zip
 ios/**/xcuserdata/
 ios/**/*.xcworkspace/xcuserdata/
 
