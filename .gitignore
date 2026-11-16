@@ -1,0 +1,26 @@
+# Rust
+rust/*/target/
+
+# Android / Gradle
+android/.gradle/
+android/local.properties
+android/app/build/
+android/app/.cxx/
+android/build/
+*.apk
+*.aab
+*.iml
+.idea/
+
+# Downloaded native SDK / Filament binaries (fetched via setup script or build instructions)
+third_party/filament/filament/
+
+# iOS / Xcode
+ios/build/
+*.ipa
+ios/**/xcuserdata/
+ios/**/*.xcworkspace/xcuserdata/
+
+# OS / Editor
+.DS_Store
+Thumbs.db

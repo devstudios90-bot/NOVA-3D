@@ -1,0 +1,1 @@
+-keep class com.nova3d.studio.nativebridge.NovaNativeBridge { *; }

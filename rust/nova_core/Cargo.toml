@@ -1,0 +1,15 @@
+[package]
+name = "nova_core"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Project NOVA 3D — Core scene, geometry, camera, animation, and command engine"
+
+[lib]
+name = "nova_core"
+crate-type = ["staticlib", "rlib"]
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+panic = "unwind"

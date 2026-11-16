@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1101AA012CE0000100000001 /* Nova3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA012CE0000100000001 /* Nova3DApp.swift */; };
+		1101AA022CE0000100000002 /* NovaBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA022CE0000100000002 /* NovaBridge.swift */; };
+		1101AA032CE0000100000003 /* NovaMetalViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA032CE0000100000003 /* NovaMetalViewport.swift */; };
+		1101AA042CE0000100000004 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA042CE0000100000004 /* Shaders.metal */; };
+		1101AA052CE0000100000005 /* NovaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA052CE0000100000005 /* NovaTheme.swift */; };
+		1101AA062CE0000100000006 /* NovaComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA062CE0000100000006 /* NovaComponents.swift */; };
+		1101AA072CE0000100000007 /* WorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102AA072CE0000100000007 /* WorkspaceView.swift */; };
+		1101AA082CE0000100000008 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1102AA082CE0000100000008 /* Metal.framework */; };
+		1101AA092CE0000100000009 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1102AA092CE0000100000009 /* MetalKit.framework */; };
+		1101AA0A2CE000010000000A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1102AA0A2CE000010000000A /* QuartzCore.framework */; };
+		1101AA0B2CE000010000000B /* libnova_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1102AA0B2CE000010000000B /* libnova_core.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110000012CE0000100000001 /* Nova3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1102AA012CE0000100000001 /* Nova3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nova3DApp.swift; sourceTree = "<group>"; };
+		1102AA022CE0000100000002 /* NovaBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaBridge.swift; sourceTree = "<group>"; };
+		1102AA032CE0000100000003 /* NovaMetalViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaMetalViewport.swift; sourceTree = "<group>"; };
+		1102AA042CE0000100000004 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		1102AA052CE0000100000005 /* NovaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTheme.swift; sourceTree = "<group>"; };
+		1102AA062CE0000100000006 /* NovaComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaComponents.swift; sourceTree = "<group>"; };
+		1102AA072CE0000100000007 /* WorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceView.swift; sourceTree = "<group>"; };
+		1102AA082CE0000100000008 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		1102AA092CE0000100000009 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		1102AA0A2CE000010000000A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1102AA0B2CE000010000000B /* libnova_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnova_core.a; sourceTree = "<group>"; };
+		1102AA0C2CE000010000000C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1102AA0D2CE000010000000D /* Nova3D-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nova3D-Bridging-Header.h"; sourceTree = "<group>"; };
+		1102AA0E2CE000010000000E /* nova_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nova_core.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1103AA012CE0000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1101AA082CE0000100000008 /* Metal.framework in Frameworks */,
+				1101AA092CE0000100000009 /* MetalKit.framework in Frameworks */,
+				1101AA0A2CE000010000000A /* QuartzCore.framework in Frameworks */,
+				1101AA0B2CE000010000000B /* libnova_core.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1104AA012CE0000100000001 = {
+			isa = PBXGroup;
+			children = (
+				1104AA022CE0000100000002 /* Nova3D */,
+				1104AA032CE0000100000003 /* Frameworks */,
+				1104AA042CE0000100000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1104AA022CE0000100000002 /* Nova3D */ = {
+			isa = PBXGroup;
+			children = (
+				1104AA052CE0000100000005 /* App */,
+				1104AA062CE0000100000006 /* Bridge */,
+				1104AA072CE0000100000007 /* Renderer */,
+				1104AA082CE0000100000008 /* UI */,
+				1104AA092CE0000100000009 /* Include */,
+				1104AA0A2CE000010000000A /* Libraries */,
+				1102AA0C2CE000010000000C /* Info.plist */,
+			);
+			path = Nova3D;
+			sourceTree = "<group>";
+		};
+		1104AA052CE0000100000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA012CE0000100000001 /* Nova3DApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1104AA062CE0000100000006 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA022CE0000100000002 /* NovaBridge.swift */,
+				1102AA0D2CE000010000000D /* Nova3D-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		1104AA072CE0000100000007 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA032CE0000100000003 /* NovaMetalViewport.swift */,
+				1102AA042CE0000100000004 /* Shaders.metal */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		1104AA082CE0000100000008 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA052CE0000100000005 /* NovaTheme.swift */,
+				1102AA062CE0000100000006 /* NovaComponents.swift */,
+				1102AA072CE0000100000007 /* WorkspaceView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1104AA092CE0000100000009 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA0E2CE000010000000E /* nova_core.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		1104AA0A2CE000010000000A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA0B2CE000010000000B /* libnova_core.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1104AA032CE0000100000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1102AA082CE0000100000008 /* Metal.framework */,
+				1102AA092CE0000100000009 /* MetalKit.framework */,
+				1102AA0A2CE000010000000A /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1104AA042CE0000100000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110000012CE0000100000001 /* Nova3D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1105AA012CE0000100000001 /* Nova3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1106AA012CE0000100000001 /* Build configuration list for PBXNativeTarget "Nova3D" */;
+			buildPhases = (
+				1107AA012CE0000100000001 /* Sources */,
+				1103AA012CE0000100000001 /* Frameworks */,
+				1108AA012CE0000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nova3D;
+			productName = Nova3D;
+			productReference = 110000012CE0000100000001 /* Nova3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1109AA012CE0000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1105AA012CE0000100000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1106AA022CE0000100000002 /* Build configuration list for PBXProject "Nova3D" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1104AA012CE0000100000001;
+			productRefGroup = 1104AA042CE0000100000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1105AA012CE0000100000001 /* Nova3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1108AA012CE0000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1107AA012CE0000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1101AA012CE0000100000001 /* Nova3DApp.swift in Sources */,
+				1101AA022CE0000100000002 /* NovaBridge.swift in Sources */,
+				1101AA032CE0000100000003 /* NovaMetalViewport.swift in Sources */,
+				1101AA042CE0000100000004 /* Shaders.metal in Sources */,
+				1101AA052CE0000100000005 /* NovaTheme.swift in Sources */,
+				1101AA062CE0000100000006 /* NovaComponents.swift in Sources */,
+				1101AA072CE0000100000007 /* WorkspaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		110A00012CE0000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		110A00022CE0000100000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		110A00032CE0000100000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nova3D/Include",
+				);
+				INFOPLIST_FILE = Nova3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nova3D/Libraries",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lnova_core",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nova3d.studio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nova3D/Bridge/Nova3D-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		110A00042CE0000100000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nova3D/Include",
+				);
+				INFOPLIST_FILE = Nova3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nova3D/Libraries",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lnova_core",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nova3d.studio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nova3D/Bridge/Nova3D-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1106AA012CE0000100000001 /* Build configuration list for PBXNativeTarget "Nova3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110A00032CE0000100000003 /* Debug */,
+				110A00042CE0000100000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1106AA022CE0000100000002 /* Build configuration list for PBXProject "Nova3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110A00012CE0000100000001 /* Debug */,
+				110A00022CE0000100000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 1109AA012CE0000100000001 /* Project object */;
+}
