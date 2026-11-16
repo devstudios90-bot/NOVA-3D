@@ -38,7 +38,7 @@ fragment float4 fragmentShader(VertexOutput in [[stage_in]]) {
     // Studio directional key light
     float3 lightDir = normalize(float3(0.55, 0.82, 0.45));
     float diff = max(dot(normalize(in.normal), lightDir), 0.15);
-    float3 baseColor = in.color.rgb > 0.0 ? in.color.rgb : float3(0.65, 0.65, 0.68);
+    float3 baseColor = (length(in.color.rgb) > 0.001) ? in.color.rgb : float3(0.65, 0.65, 0.68);
     float3 lit = baseColor * diff;
     return float4(lit, 1.0);
 }
